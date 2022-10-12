@@ -111,24 +111,24 @@ p {
     background-color: #EBEBEB;
     scroll-behavior: smooth;
 }
-::-webkit-scrollbar {
+.section-body::-webkit-scrollbar {
     width: 10px;
   }
   
 /* Track */
-::-webkit-scrollbar-track {
+.section-body::-webkit-scrollbar-track {
 box-shadow: inset 0 0 5px grey; 
 border-radius: 5px;
 }
 
 /* Handle */
-::-webkit-scrollbar-thumb {
+.section-body::-webkit-scrollbar-thumb {
 background: #19A4A2; 
 border-radius: 5px;
 }
 
 /* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
+.section-body::-webkit-scrollbar-thumb:hover {
 background: #19A4A2; 
 }
 
