@@ -533,10 +533,11 @@ h2.section-title {}
 
 .project-description {
     text-align: center;
-    padding: 20px;
+    padding: 15px;
     position: absolute;
     background-color: rgba(0, 0, 0, .5);
-    margin: 5%;
+    width: 100%;
+    height: 100%;
     top: 100%;
     -webkit-transition: all .3s ease-in-out;
     -moz-transition: all .3s ease-in-out;
