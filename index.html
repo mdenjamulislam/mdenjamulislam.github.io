@@ -322,6 +322,19 @@
                         <div class="portfolio-list">
                             <div class="portfolio-item">
                                 <a href="https://fastsell.live/" class="" target="_blank">
+                                    <img src="images/portfolio/Coming-soon.png" alt="Coming-soon">
+                                    <div class="project-description">
+                                        <div class="project-title">
+                                            <h4>Designer Personal Portfolio</h4>
+                                        </div><!-- end project-title -->
+                                        <div class="desc-text">
+                                            <p>Web Developer personal portfolio website template.</p>
+                                        </div><!-- end desc-text -->
+                                    </div><!-- end project-description -->
+                                </a>
+                            </div><!-- end portfolio-item -->
+                            <div class="portfolio-item">
+                                <a href="https://fastsell.live/" class="" target="_blank">
                                     <img src="images/portfolio/8.PNG" alt="E-commerce website">
                                     <div class="project-description">
                                         <div class="project-title">
@@ -409,15 +422,15 @@
                         </div><!-- end contact-info -->
                         <div class="contact-form">
                             <h5><i class="fa fa-paper-plane-o"></i>Get In Touch</h5>
-                            <form action="#" class="form-group">
+                            <form class="form-group" onsubmit="sendmail(); reset(); return false;">
                                 <div class="form-group">
-                                    <input type="text" name="fullname" class="form-control" placeholder="Name">
+                                    <input type="text" id="name" name="fullname" class="form-control" placeholder="Name">
                                 </div><!-- form-group -->
                                 <div class="form-group">
-                                    <input type="text" name="phonenumber" class="form-control" placeholder="Phone number">
+                                    <input type="text" id="number" name="phonenumber" class="form-control" placeholder="Phone number">
                                 </div><!-- end form-group -->
                                 <div class="form-group">
-                                    <input type="email" name="fullname" class="form-control" placeholder="Email">
+                                    <input type="email" id="email" name="email" class="form-control" placeholder="Email">
                                 </div><!-- end form-group -->
                                 <div class="form-group">
                                     <textarea name="comment" id="comment" class="form-control" placeholder="Comments"></textarea>
@@ -438,8 +451,28 @@
 
     <!-- Main jQueary file -->
     <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
+    
     <script src="js/script.js"></script>
+    <script>
+        function sendmail(){
+            Email.send({
+                Host : "smtp.gmail.com",
+                Username : "goalcatchit@gmail.com",
+                Password : "5nj@M0l1_9$l@M",
+                To : 'mdenjamulislam527gmail.com',
+                From : document.getElementById("email").value,
+                Subject : "Portfolio",
+                Body : "Name" + document.getElementById("name").value
+                    + "Phone Number" + document.getElementById("number").value
+                    + "Email" + document.getElementById("email").value
+                    + "Message" + document.getElementById("comment").value
+            }).then(
+            message => alert("Message send sucessfully!")
+            );
+        };
+    </script>
 </body>
 </html>
