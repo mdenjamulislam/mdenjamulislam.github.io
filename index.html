@@ -20,6 +20,8 @@
     href="https://fonts.googleapis.com/css?family=Roboto%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CRoboto+Slab%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic&#038;display=auto"
     type="text/css" media="all">
 
+    <link rel="stylesheet" href="https://s.pageclip.co/v1/pageclip.css" media="screen">
+
   <!-- CSS STYLES -->
   <link rel="stylesheet" href="assets/css/vendors/bootstrap.css" type="text/css" media="all">
   <link rel="stylesheet" href="assets/fonts/font-awesome/css/font-awesome.css" type="text/css" media="all">
@@ -1624,7 +1626,7 @@
                 <div class="contacts-form scrolla-element-anim-1 scroll-animate" data-animate="active">
                   <div class="bg-img" style="background-image: url(assets/images/pat-1.png);"></div>
                   <div class="contacts-form">
-                    <form id="cform" method="post">
+                    <form id="cform" class="pageclip-form" action="https://send.pageclip.co/peqYCy6pB82VclImzqZfLzjYIjmsp7Xw/contact-form" method="post">
                       <div class="row">
                         <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
                           <div class="group">
@@ -1660,9 +1662,9 @@
                         </div>
                         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 align-right">
                           <div class="terms-label">* Accept the terms and conditions.</div>
-                          <a href="#" class="btn" onclick="$('#cform').submit(); return false;">
+                          <button type="submit" class="btn pageclip-form__submit"  > <!-- onclick="$('#cform').submit(); return false;" -->
                             <span>Send Message</span>
-                          </a>
+                          </button>
                         </div>
                       </div>
                     </form>
@@ -1749,6 +1751,9 @@
   <script src="assets/js/skrollr.js"></script>
   <script src="assets/js/jquery.cookie.js"></script>
   <script src="assets/js/typed.js"></script>
+
+  <!-- HTML Form -->
+  <script src="https://s.pageclip.co/v1/pageclip.js" charset="utf-8"></script>
   <script src="assets/js/common.js"></script>
 
 </body>
